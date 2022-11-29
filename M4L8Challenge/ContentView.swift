@@ -12,7 +12,7 @@ struct ContentView: View {
         ScrollView {
             
             LazyVStack {
-                ForEach(0..<50) {index in
+                ForEach(0..<64) {index in
                     
                     ZStack {
                         
@@ -24,7 +24,7 @@ struct ContentView: View {
                                     startRadius: 0,
                                     endRadius: 200
                                 ))
-                            .frame(width: 350, height:
+                            .frame(width:  pow(1.1, CGFloat (index)), height:
                                     pow(1.1, CGFloat (index)))
                             .cornerRadius(20)
                         
